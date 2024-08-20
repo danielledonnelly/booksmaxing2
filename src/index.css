@@ -37,7 +37,7 @@ body {
 .card {
   width: 100%; 
   max-width: 700px;
-  height: 600px; 
+  max-height: 1000px;
   margin: 0;
   background-color: #242424 !important;
   color: white !important;
@@ -116,6 +116,7 @@ button:focus-visible {
 .react-datepicker__navigation-icon::before {
   border-color: #505050; /* White arrows */
 }
+
 
 
 /* BOOK TRACKER */
