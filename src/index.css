@@ -1,13 +1,168 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  padding: 0px !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a !important;
+  color: white !important;
+}
+
+.card {
+  width: 100%; 
+  max-width: 700px;
+  height: 600px; 
+  margin: 0;
+  background-color: #242424 !important;
+  color: white !important;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #505050;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.MuiTypography-h5 {
+  text-align: center;
+}
+
+/* CALENDAR */
+
+.calendar-container {
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.calendar {
+  background-color: #1a1a1a; 
+  color: white; 
+  border: none !important;
+  border-radius: 8px;
+}
+
+.react-datepicker__header {
+  background-color: #1a1a1a; 
+  border: none !important; 
+}
+
+.react-datepicker__day-name {
+  color: #b3b3b3; 
+}
+
+.react-datepicker__day,
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  color: white; 
+  background-color: #333333; 
+}
+
+.react-datepicker__current-month {
+  color: white; 
+}
+
+.react-datepicker__navigation-icon::before {
+  border-color: #505050; /* White arrows */
+}
+
+
+/* BOOK TRACKER */
+.textField-white {
+  color: white;
+  background-color: #505050;
+}
+
+.MuiInputLabel-root {
+  color: white !important;
+}
+
+.react-datepicker__month-container {
+  padding: 10px;
+}
+
+.react-datepicker__day,
+.react-datepicker__day-name {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem; 
+  height: 2rem; 
+  border-radius: 10%; 
+  margin: 0.2rem;
+  color: #ffffff; 
+}
+
+.react-datepicker__day:hover {
+  background-color: #b3e6f8;
+}
+
+.react-datepicker__day-custom {
+  border-radius: 10%;
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
 }
