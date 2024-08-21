@@ -78,6 +78,13 @@ button:focus-visible {
 }
 
 /* CALENDAR */
+.calendar {
+  background-color: #1a1a1a; 
+  color: white; 
+  border: none !important;
+  border-radius: 8px;
+}
+
 .react-datepicker__header {
   background-color: #1a1a1a; 
   border: none !important; 
